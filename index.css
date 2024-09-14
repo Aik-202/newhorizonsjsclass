@@ -1,0 +1,12 @@
+#showbutton, #light, #switchOffButton {
+    display: none;
+}
+
+#nolight {
+    width: 145px;
+    height: 250px;
+}
+ 
+#light {
+    width: 150px;
+}
