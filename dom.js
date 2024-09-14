@@ -58,3 +58,7 @@ function switchOnLight () {
     light.style.display = "inline"
     switchOffButton.style.display = "inline"
 }
+
+// Assignment
+// Create a new function switchOffLight 
+// for the light off button 
