@@ -52,13 +52,17 @@ switchOnButton = document.getElementById("switchOnButton")
 switchOffButton = document.getElementById("switchOffButton")
 
 function switchOnLight () {
-    nolight.style.display = "none"
-    switchOnButton.style.display = "none"
-
     light.style.display = "inline"
+    nolight.style.display = "none"
+
+    switchOnButton.style.display = "none"
     switchOffButton.style.display = "inline"
 }
 
-// Assignment
-// Create a new function switchOffLight 
-// for the light off button 
+function switchOffLight () {
+    light.style.display = "none"
+    nolight.style.display = "inline"
+
+    switchOnButton.style.display = "inline"
+    switchOffButton.style.display = "none"
+}
