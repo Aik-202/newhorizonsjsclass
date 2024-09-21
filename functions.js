@@ -30,6 +30,8 @@
 let a = 14
 let b = 7
 
+
+// ES5
 // Addition
 function add(a, b) {
     c = a + b
@@ -37,13 +39,40 @@ function add(a, b) {
 }
 
 // Subtraction
-sub = a - b
-console.log(sub)
+function sub(a, b) {
+    c = a - b
+    return c
+}
 
 // Multiplication
-mul = a * b
-console.log(mul)
+function mul(a, b) {
+    c = a * b
+    return c
+}
 
 // Division
-div = a / b
-console.log(div)
+function div(a, b) { 
+    c = a / b
+    return c
+}
+
+console.log(div(1775, 88))
+
+//ES6 function
+// const add = (a, b) => {
+//     c = a + b
+//     return c // signifies the end of a function
+// }
+
+// () => {} // call back functions 
+// () => a + b
+
+// Example of call back function in play
+/* React.useEffect((a, b) => a + b
+) */
+
+// User input through the browser
+// We can demand the user input from a browser
+input = prompt("What is your name")
+
+console.log(input)
