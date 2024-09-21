@@ -47,6 +47,19 @@ console.log(y)
 x =  20 % 3
 console.log(x)
 
+// ** Exponentiaton
+x = 5 ** 2 // 25
+console.log(x)
+
+// we can use the Math.pow() function instead of 
+// exponentiation
+
+console.log(Math.pow(5, 2))
+
+// Operator Precedence
+// the order of operators
+x = 100 + 50 * 3  // 50 * 3, + 100
+console.log(x) 
 
 // Assignment Operators
 
@@ -96,6 +109,7 @@ console.log(x != y)
 // ? tenaray operator is the short version of the if else
 if (x >= 5) {
     console.log('yes')
+    console.log('It is')
 } else {
     console.log('no')
 }
@@ -107,9 +121,9 @@ x >= 5 ? console.log('yes') : console.log('no')
 
 // && , Logical AND
 // if expr1 is true and expr2 is true returns true
-// but if one of them is false, it will retrun false
+// but if one of them is false, it will return false
 
-x = 5, y = 10, z = 105, k = 22
+x = '5', y = 10, z = 105, k = 22
 
 expr1 = x > y // false
 expr2 = z > k // true
@@ -125,8 +139,35 @@ console.log(expr1 || expr2)
 // it negates the expression
 console.log(!expr1)
 
-// Relational Operators
+// Type Operators
+// Helps us check the type of a variable or object
+
+// typeof operator, returns the type of a variable
+console.log(typeof(expr1)) 
+
+//instanceof, returns the instance of an object
+
 // Bitwise Operators
+// They are used for operations on binary, and js uses 32bits
+// 0 or 1.. 
+// bits is bINARY DIGits 
+// 2 in binary is 10
+// js sees it as 00000000000000000000000000000010
+
+// Lets look at the operators
+// & AND
+// We enter the digits in base 10: 1, 2, 3, 4,...
+// But Javascript converts it to binary, works on it 
+// and converts it back to base10
+console.log(2 & 1)
+
+// | OR
+// ~ NOT
+console.log(~ 2)
+// ^ XOR
+// << Zero fill left shift
+// >> Signed right shift
+// >> Zero fill right shift 
 
 // String Operations
 // We can add a string to a string, 
@@ -138,7 +179,6 @@ fullname= firstname + ' ' + lastname
 console.log(fullname)
 
 // We can also add a number to a string
-
 firstname = "Assurance"
 lastname = "Ikogwe"
 username = firstname +  202
