@@ -50,9 +50,22 @@ let fullname = "Assurance Ikogwe"
 // I want just the lastname 
 
 // slice(start, end)
+// js starts from 0 in counting
 // start means the starting index
 // end means the ending index
 
 lastname =  fullname.slice(9, 16)
 
 console.log(lastname)
+
+// Exercise
+// Extract firstname using positive amd negative
+
+// Using Negative
+// we can have just a starting value 
+// if we've exceeded the numbers
+lastname =  fullname.slice(-14, -7)
+console.log(lastname)
+
+// substring()
+// this
