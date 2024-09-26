@@ -68,4 +68,36 @@ lastname =  fullname.slice(-14, -7)
 console.log(lastname)
 
 // substring()
-// this
+// this is just like the slice but it doesn't 
+// take negatives
+lastname =  fullname.substring(9, 16)
+console.log(lastname)
+
+//substr()
+// it's similar to the slice in the sense that:
+// start means the starting index
+// but
+// end means the length of the extracted string
+fullname = "Assurance Ikogwedffgff"
+lastname = fullname.substr(9, 13) 
+console.log(lastname)
+// Can also take negative
+
+// Replacing string content
+// We use the replace() method
+
+text = "Noow Horizons"
+
+// We want to replace Noow with New
+// first "" => What do you want to replace
+// second "" => With what?
+correct = text.replace("Noow", "New")
+
+console.log(correct)
+
+// Converting to upper and lowercase
+console.log(correct.toUpperCase()) // converts to upper case
+console.log(correct.toLowerCase()) // converts to upper case
+
+// Exercise 2
+// Number 5 under task 2 of the Algorithm challenge
