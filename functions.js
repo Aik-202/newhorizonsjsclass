@@ -58,7 +58,7 @@ function div(a, b) {
 
 console.log(div(1775, 88))
 
-//ES6 function
+//ES6 function, also called arrow function
 // const add = (a, b) => {
 //     c = a + b
 //     return c // signifies the end of a function
