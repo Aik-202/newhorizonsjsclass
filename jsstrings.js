@@ -12,7 +12,7 @@ let text = "New Horizons"
 console.log(text.length)
 
 // Escape characters
-let text2 = "New Horizons\n Bus is at the station"
+let text2 = "New Horizons\t Bus is at the station"
 // New Horizons' Bus is at the station
 
 console.log(text2)
@@ -32,7 +32,7 @@ console.log(text2)
 x = new String ('Abba')
 
 // String Methods
-// length() is a string mewthod that gives
+// length() is a string method that gives
 // the length of a string
 let text3 = "New Horizons"
 console.log(text3.length)
@@ -53,8 +53,9 @@ let fullname = "Assurance Ikogwe"
 // js starts from 0 in counting
 // start means the starting index
 // end means the ending index
+// JS ignores the element of the ending index
 
-lastname =  fullname.slice(9, 16)
+lastname =  fullname.slice(10, 16)
 
 console.log(lastname)
 
@@ -64,7 +65,7 @@ console.log(lastname)
 // Using Negative
 // we can have just a starting value 
 // if we've exceeded the numbers
-lastname =  fullname.slice(-14, -7)
+lastname =  fullname.slice( -16, -7 )
 console.log(lastname)
 
 // substring()
@@ -79,14 +80,14 @@ console.log(lastname)
 // but
 // end means the length of the extracted string
 fullname = "Assurance Ikogwedffgff"
-lastname = fullname.substr(9, 13) 
+lastname = fullname.substr(0,9) 
 console.log(lastname)
 // Can also take negative
 
 // Replacing string content
 // We use the replace() method
 
-text = "Noow Horizons"
+text = "Noow Noow Horizons"
 
 // We want to replace Noow with New
 // first "" => What do you want to replace
@@ -101,3 +102,44 @@ console.log(correct.toLowerCase()) // converts to upper case
 
 // Exercise 2
 // Number 5 under task 2 of the Algorithm challenge
+input = "Mr John Smith"
+correct = input.replace(" ", "%20") //Mr%20John Smith
+correct = correct.replace(" ", "%20")
+console.log(correct)
+
+// concat() Method
+// it joins two strings together
+let t1 = "New"
+let t2 = "Horizons"
+// concat takes in two parameters
+// the first is what should seperate them
+// the second is the other string
+let name = t1.concat(" " , t2)
+console.log(name)
+
+// trim() function
+// It removes the sapce at the beginning of a string
+name = " New Horizons"
+console.log(name.trim())
+
+// string padding
+// adding 0 to the beginning or end of a string
+//padStart, padEnd
+text = "5"
+console.log(text.padStart(20, 0))
+console.log(text.padEnd(6, 0))
+
+//charAt() Method
+// it returns the character in a string of the specified index
+input = "Mr John Smith"
+console.log(input.charAt(8))
+
+//Converting string to arrays
+// [1, 2, 3, 4]
+// An array is a contiguous collection of items
+// We use the split function 
+input = "Mr,John,Smith"
+array = input.split() // prints the entire string as an array
+// We can determine how they will seperated
+array = input.split(",")
+console.log(array) 
