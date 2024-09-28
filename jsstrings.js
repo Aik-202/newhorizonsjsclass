@@ -143,3 +143,42 @@ array = input.split() // prints the entire string as an array
 // We can determine how they will seperated
 array = input.split(",")
 console.log(array) 
+
+// String Search
+// We can search for the characters in a string
+// using these methods
+// .indexof() // gives index of the search string
+// .lastIndexOf()
+//.search()
+// .startsWith()
+// .endsWith()
+
+//.indexof()
+text = "Try and locate me"
+console.log(text.indexOf("locate")) // starts 0
+console.log(text.indexOf("locate", 7)) // starts 7
+
+//.lastindex()
+// it's used when we have repititons, 
+// it gets the starting index of the last match
+text = "Try and locate me no locate me"
+console.log(text.lastIndexOf("biscuit"))
+
+// indexOf and lastIndexOf returns -1 if the string
+// is not found
+
+// both can take in a second paramenter that determines
+// where the search should start from
+
+//.search() method is just like indexOf
+console.log(text.search("locate"))
+// does not allow a second parameter
+
+// .startsWith() 
+// .endsWith()
+// they return a boolean value
+console.log(text.startsWith("Trying"))
+
+// it takes a second parameter that counts
+text = "ooh Hey ooh Hey ooh"
+console.log(text.startsWith("Hey", 3))
