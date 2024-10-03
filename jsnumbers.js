@@ -80,3 +80,32 @@ console.log(x.toExponential())
 // without decimal
 // parameter represents decimal place
 console.log(x.toFixed(1))
+
+//toPrecision()
+// you specify the exact decimal place
+console.log(x.toPrecision(5))
+
+// valueOf()
+// it returns a number
+console.log((10 * 4).valueOf())
+
+// Converting variables to numbers
+// Number() returns a number
+// parseFloat() returns Decimal
+// pasreInt() returns a whole numbers
+
+console.log(Number(false))
+console.log(parseInt(24.6))
+console.log(parseFloat(24.67))
+
+//Number Property
+console.log(Number.MAX_VALUE ) // js largest number
+console.log(Number.MIN_VALUE ) // js smallest number
+console.log(Number.POSITIVE_INFINITY ) // js positive infinity
+console.log(Number.NEGATIVE_INFINITY ) // js negative infinity
+console.log(Number.NaN) // js NaN
+
+// They allow us know the properties of js Numbers
+// We don't use them in operation
+x = 56
+console.log(x.MAX_VALUE) // gives undefined
