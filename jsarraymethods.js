@@ -59,3 +59,14 @@ var corruptionSymbol = 'ø';
 var targetDisk = [ 'E', 'ø', '-', 'C', 'ø', 'o', 'r', 'ø', 'ø', 'p', '\'', 'ø', 's', ' ', 'E', 'v', 'ø', 'i', 'ø', 'ø', 'l'];
 var newDisk = [];
 var corruptionSymbol = 'ø';
+
+// newDisk.push(targetDisk[0])
+// newDisk.push(targetDisk[2])
+// newDisk.push(targetDisk[3])
+
+for (let i = 0; i < targetDisk.length; i++) {
+    if (targetDisk[i] !== corruptionSymbol){
+        newDisk.push(targetDisk[i])
+    } 
+    console.log(newDisk)
+}
