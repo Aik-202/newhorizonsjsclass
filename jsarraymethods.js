@@ -134,10 +134,9 @@ console.log(evenNo)
 console.log(oddNo)
 
 // Add evenNo
-var sumEven
-for (let i = 0; i < evenNo.length; i++ ){
-    sumEven = evenNo[i] + evenNo[i++]
-}
+var sumEven =  evenNo.reduce((total, val) => {
+    return total + val
+})
 
 // Add OddNo
 var oddSum
