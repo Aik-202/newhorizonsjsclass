@@ -116,19 +116,23 @@ console.log(newcar)
 // # the even and odd numbers 
 
 let numbers= [1, 2, 3, 4, 5, 6, 7]
-let evenNo = []
-let oddNo = []
+let evenNo = numbers.filter((val) => {
+    return val % 2 == 0
+})
+let oddNo = numbers.filter((val) => {
+    return val % 2 !== 0
+})
 
 // We have gotten our even and odd numbers
-for (let i = 0; i < numbers.length; i++){
-    // when you divide an even no by 2
-    // we get 0 as the reminder
-    if(numbers[i] % 2 == 0 ) {
-        evenNo.push(numbers[i]) 
-    } else {
-        oddNo.push(numbers[i])
-    }
-}
+// for (let i = 0; i < numbers.length; i++){
+//     // when you divide an even no by 2
+//     // we get 0 as the reminder
+//     if(numbers[i] % 2 == 0 ) {
+//         evenNo.push(numbers[i]) 
+//     } else {
+//         oddNo.push(numbers[i])
+//     }
+// }
 
 console.log(evenNo)
 console.log(oddNo)
@@ -139,10 +143,15 @@ var sumEven =  evenNo.reduce((total, val) => {
 })
 
 // Add OddNo
-var oddSum
-for (let i = 0; i < oddNo.length; i++ ){
-    console.log(oddNo[i++])
-}
+var oddSum = oddNo.reduce((total, val) => {
+    return total + val
+})
 
 console.log(oddSum)
-// console.log(sumEven)
+console.log(sumEven)
+
+let totalSum = []
+totalSum.push(sumEven)
+totalSum.push(oddSum)
+
+console.log(totalSum)
