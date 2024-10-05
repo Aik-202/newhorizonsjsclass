@@ -138,3 +138,12 @@ var sumEven
 for (let i = 0; i < evenNo.length; i++ ){
     sumEven = evenNo[i] + evenNo[i++]
 }
+
+// Add OddNo
+var oddSum
+for (let i = 0; i < oddNo.length; i++ ){
+    console.log(oddNo[i++])
+}
+
+console.log(oddSum)
+// console.log(sumEven)
