@@ -114,3 +114,27 @@ console.log(newcar)
 
 // # Hint: You can use for loops to get the sum of 
 // # the even and odd numbers 
+
+let numbers= [1, 2, 3, 4, 5, 6, 7]
+let evenNo = []
+let oddNo = []
+
+// We have gotten our even and odd numbers
+for (let i = 0; i < numbers.length; i++){
+    // when you divide an even no by 2
+    // we get 0 as the reminder
+    if(numbers[i] % 2 == 0 ) {
+        evenNo.push(numbers[i]) 
+    } else {
+        oddNo.push(numbers[i])
+    }
+}
+
+console.log(evenNo)
+console.log(oddNo)
+
+// Add evenNo
+var sumEven
+for (let i = 0; i < evenNo.length; i++ ){
+    sumEven = evenNo[i] + evenNo[i++]
+}
