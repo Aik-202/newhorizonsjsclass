@@ -70,3 +70,47 @@ for (let i = 0; i < targetDisk.length; i++) {
     } 
     console.log(newDisk)
 }
+
+// Deleting Elements
+// we use the delete keyword
+// using this however leaves holes in our array
+// so it is advised to use the pop()
+car = ["bmw", "toyota", "Volvo"]
+delete car[0]
+console.log(car)
+
+// Merging Arrays
+// Joining two arrays together
+// we use the concat() 
+const boyChild = ['Abraham', 'Isaac', 'Isreal']
+const girlChild = ['Sarah', 'Rebeekah', 'Leah']
+const adopted = ['Lot', 'Esau']
+
+let children = boyChild.concat(girlChild, adopted)
+children = children.concat("Moses")
+
+console.log(children)
+
+// slice()
+// creates a new array
+// the source array  does  not change
+// slice(x, y)
+// x => starting index, by default it is 0
+// y => ending index, the element at the ending index
+// is ignored, by default it is the length
+
+car = ["bmw", "toyota", "Volvo"]
+newcar = car.slice(0, 2) 
+
+console.log(car)
+console.log(newcar)
+
+// # Exercise
+// # You create an array
+// # lets say [1, 2, 3, 4, 5, 6, 7]
+// # odd = [1, 3, 5, 7] = 16
+// # even = [2, 4, 6] = 12
+// # sum = [12, 16]
+
+// # Hint: You can use for loops to get the sum of 
+// # the even and odd numbers 
