@@ -55,3 +55,6 @@ console.log(birthday)
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 console.log(days[birthday.getDay()])
+
+const months = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+console.log(months[birthday.getMonth()])
