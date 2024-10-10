@@ -124,16 +124,62 @@ switch (hour) {
 // D => Fair
 // E => Poor
 // F => Fail
-// const grade = A
+const grade = 'A'
+
+switch (grade) {
+    case 'A':
+     console.log('Excellent') 
+    break;
+    case 'B':
+        console.log('Very Goood')
+    break;
+    case 'C':
+        console.log('Good')
+    break;
+    case 'D':
+        console.log('Fair')
+    break;
+    case 'E':
+        console.log('Poor')
+    break;
+    case 'F':
+        console.log('Fail')
+    break;
+    default:
+        console.log('Not a grade')
+}
 
 // Class-Exercise two
 // In EKSU grading system
 // grade can be A, B, C, D, E, F
 // Using the case print out the following
-// for 70 => A
-// 60 => B
-// 50 => C
-// 40 => D
-// 30 => E
-// 20 => F
-// const grade = 60
+// for 70 - 100 => A
+// 60 - 69 => B
+// 50 - 59 => C
+// 40 - 49 => D
+// 30 - 39 => E
+// 0 - 29 => F
+const grade2 = -12
+
+switch (true) {
+    case grade2 >= 70 :
+     console.log('A') 
+    break;
+    case grade2 >= 60 && grade2 <= 69:
+        console.log('B')
+    break;
+    case grade2 >= 50 && grade2 <= 59:
+        console.log('C')
+    break;
+    case grade2 >= 40 && grade2 <= 49:
+        console.log('D')
+    break;
+    case grade2 >= 30 && grade2 <= 39:
+        console.log('E')
+    break;
+    case grade2 >= 0 && grade2 <= 29:
+        console.log('F')
+    break;
+    default:
+        console.log('Not a grade')
+}
