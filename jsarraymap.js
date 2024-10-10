@@ -38,3 +38,23 @@ let sum = no1.reduce( (total, value) => {
 })
 
 console.log(sum)
+
+// Methods to get array element index
+// indexOf()
+// returns the position on an element in a array
+// position is index + 1
+position = no1.indexOf(67) + 1
+console.log(position)
+
+// lastIndexOf()
+// we use this when there are more than one occurance
+// of an element, this method gives us the index of the
+// last occurance
+
+no2  = [45, 4, 9, 45, 16, 23, 67, 45, 90]
+position = no2.lastIndexOf(45) + 1
+console.log(position)
+
+// includes()
+// returns true or false
+console.log(no2.includes(45))
