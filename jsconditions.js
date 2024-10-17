@@ -12,6 +12,7 @@
 // Comparison Operators
 // We have ==, ===, !=, !==, >, <, >=, <=, ?
 
+
 // Logical Operators, used for testing 
 // and comparison of two or more expressions
 
@@ -33,7 +34,7 @@
       //action
 // }
 
-hour = 20
+// hour = 11
 
 // if (hour > 11 ) {
 //     console.log('The 11th hour miracle has passed')
@@ -95,19 +96,19 @@ hour = 20
 //     // block
 // } 
 
-// With this the expression is not boolean, it has a value
+// With this the expression is not necessarily boolean, it has a value
 
 // x, y are the possible value of the expression
 
 // defualt is what happens when none of the conditions are true
 
-hour = 11
+hour = 26
 
-switch (hour) {
-    case 12:
+switch (true) {
+    case hour > 11:
      console.log('The 11th hour miracle has passed') 
     break;
-    case 11:
+    case hour == 11:
         console.log('The 11th hour miracle is happening')
     break;
     default:
@@ -162,23 +163,23 @@ switch (grade) {
 const grade2 = -12
 
 switch (true) {
-    case grade2 >= 70 :
-     console.log('A') 
+    case (grade2 >= 70):
+        console.log('The grade is A')
     break;
-    case grade2 >= 60 && grade2 <= 69:
-        console.log('B')
+    case (grade2 <= 69 && grade2 >= 60):
+        console.log('The grade is B')
     break;
-    case grade2 >= 50 && grade2 <= 59:
-        console.log('C')
+    case (grade2 <= 59 && grade2 >= 50):
+        console.log('The grade is C')
     break;
-    case grade2 >= 40 && grade2 <= 49:
-        console.log('D')
+    case (grade2 <= 49 && grade2 >= 40):
+        console.log('The grade is D')
     break;
-    case grade2 >= 30 && grade2 <= 39:
-        console.log('E')
+    case (grade2 <= 39 && grade2 >= 30):
+        console.log('The grade is E')
     break;
-    case grade2 >= 0 && grade2 <= 29:
-        console.log('F')
+    case (grade2 <= 29  && grade2 >= 0):
+        console.log('The grade is F')
     break;
     default:
         console.log('Not a grade')
