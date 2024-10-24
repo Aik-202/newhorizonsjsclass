@@ -31,7 +31,7 @@ car = []
 // }
 
 for (let i = 0; i < 4; i++){
-    plus1 = i +  1
+    plus1 = i + 1
     car[i] = 'BMW' + plus1
 }
 
@@ -39,3 +39,68 @@ console.log(car)
 
 // For in
 // loops through the properties of an object
+// syntax
+// for (let x in y) {
+//  repeated code
+// }
+
+car = {model: "bmw", color:"black", type:"suv"}
+// console.log(car.model) // car['model']
+// console.log(car.color)
+// console.log(car.type)
+
+for (let x in car) {
+    console.log(car[x])
+}
+
+// forEach
+// it is a method like loop, that takes a function
+// as it's parameter
+// the function it takes in can have 3 parameters
+// => value
+// => index
+// => array 
+
+const numbers = [45, 4, 9, 16, 25]
+
+numbers.forEach(myFunction)
+
+function myFunction (value, index, array) {
+    console.log(array[index])
+}
+
+// Mechanical Loops
+// The Loops do not provide a way to automatically
+// increase the counter value, the programmer has to 
+// do this by themselves inside the loop body
+
+// while loop
+// syntax
+// while (condition) {
+    // code
+    //increment
+// }
+
+let i = 0
+while (i < 10) {
+    console.log('This number ' + i + ' is less than 10')
+    i++
+}
+
+// do while loop
+// the difference here is the block comes before the
+// condition, so the block gets executed even if the 
+// condition is false
+
+// syntax
+// do {
+    // code
+    //increment
+// }
+// while (condition)
+
+do {
+    console.log('This number ' + i + ' is less than 10')
+    i++
+}
+while (i < 10) 
