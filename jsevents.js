@@ -22,3 +22,9 @@
 // Event Handler => hideText()
 // It determines what now happens when the 
 // button is clicked 
+
+// With inline events, we do get a dynamic effect
+// JS provides us with what we call an event listener
+// that we can attach to our html elements, so that
+// anytime the event occurs, the function is executed
+// html.addEventListener(event, function) 
